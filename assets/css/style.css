@@ -331,6 +331,7 @@ footer nav a {
 #programming h2 {
 	font-size: 60px;
 	margin: 143px;
+	padding-left: 55px;
 }
 
 .programming-p {
@@ -361,6 +362,7 @@ footer nav a {
 #database h2 {
 	font-size: 60px;
 	margin: 143px;
+	padding-left: 55px;
 }
 
 .database-p {
