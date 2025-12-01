@@ -62,7 +62,7 @@ header nav a {
 }
 
 #hero {
-	background-image: url(../img/clouds.jpg);
+	background-image: url(../img/cloudsop.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -86,20 +86,26 @@ header nav a {
 }
 
 .about-text {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	text-align: left;
-	gap: 20px;
-	margin: 143px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+    margin: 143px;
+    margin-left: 55px; 
 }
+
 .about-image {
-	max-width: 100%;
-	height: auto;
-	margin: 0 auto;
-	display: block;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.6);
+    border-radius: 80px;
+    flex-shrink: 0;
+    margin: 135px;    /* ← this is important */
+
+	
 }
+
 
 #about h2 {
 	font-size: 60px;
@@ -108,7 +114,8 @@ header nav a {
 }
 
 .about-p {
-	margin-left: 143px;
+	max-width: 500px;
+	margin-left: 0;
 }
 .highlighted {
 	font-size: 20px;
@@ -118,6 +125,7 @@ header nav a {
 #portfolio h2 {
 	font-size: 60px;
 	margin: 143px;
+	padding-left: 55px;
 }
 
 .portfolio-grid {
@@ -158,8 +166,10 @@ header nav a {
 }
 
 #contact h2 {
-	font-size: 60px;
-	margin: 143px;
+  font-size: 60px;
+  margin: 2px auto 20px auto;
+  text-align: center;
+  color: black;
 }
 
 .contact-links {
@@ -413,7 +423,7 @@ margin-bottom: 143px;
 		margin-left: 0;
 	}
 	.about-image {
-		margin-bottom: 20px;
+		margin-bottom: 2px;
 	}
 	#about h2 {
 		text-align: center;
@@ -572,23 +582,23 @@ margin-bottom: 143px;
 		margin-right: 0;
 	}
 
-	.interpersonal-text {
+	.capstone-text {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
 		margin: 40px;
 	}
-	.interpersonal-p {
+	.capstone-p {
 		margin-left: 0;
 	}
 
-	.interpersonal-text img {
+	.capstone-text img {
 		margin-bottom: 20px;
 		max-width: 400px;
 		height: 400px;
 	}
 
-	#interpersonal h2 {
+	#capstone h2 {
 		margin: 50px 0;
 		text-align: center;
 		margin-left: 0;
@@ -631,29 +641,26 @@ margin-bottom: 143px;
 	}
 }
 #contact {
-	position: relative;
-	margin-top: 180px;
-  background-image: url(../img/clouds.jpg);
-  background-size: cover;        /* makes it fill the whole area */
-  background-position: center;   /* centers the image */
-  background-repeat: no-repeat;  /* prevents tiling */
-  
-  padding: 100px 20px;   
-  min-height: 120vh;
-  width: 100%;
-  padding: 100px 20px;   
-  min-height: 120vh;     
+  position: relative;
+  margin-top: 180px;
+  background-image: url(../img/clouds2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 60px 200px;   /* adjust height by changing these */
+  min-height: 450px;    /* THIS will finally work */
   width: 100%;
 }
+
 #contact::before {
   content: "";
   position: absolute;
   inset: 0;
-  background:   rgba(0,0,0,.1); 
+  background: rgba(0,0,0,.);
   z-index: 0;
 }
 
-/* make sure content sits above overlay */
 #contact * {
   position: relative;
   z-index: 1;
@@ -663,7 +670,7 @@ margin-bottom: 143px;
   max-width: 700px;
   margin: 0 auto;
   padding: 30px;
-  background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) ;
+  background:#000;
   border-radius: 12px;
   box-shadow:  0 4px 10px rgba(252, 249, 249, 0.925);
   display: flex;
@@ -714,10 +721,19 @@ margin-bottom: 143px;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
-  color:white;
+  color:black;
 }
 
 .contact-form button:hover {
   transform: translateY(-3px);
   box-shadow:  0 4px 10px #7596c6;
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.6);
+    border-radius: 8px;
+    flex-shrink: 0;       /* ← keeps image from moving or shrinking */
 }
