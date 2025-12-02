@@ -13,17 +13,39 @@
 	</head>
 	<body>
 		<header>
-			<nav>
-				<a href="index.html" class="logo">RYAN HITT</a>
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="#about">ABOUT</a></li>
-					<li><a href="#portfolio">PORTFOLIO</a></li>
-					<li><a href="assets/doc/resume (1).pdf">RESUME</a></li>
-					<li><a href="#contact">CONTACT</a></li>
-				</ul>
-			</nav>
-		</header>
+  <nav>
+    <a href="index.html" class="logo">RYAN HITT</a>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Main Nav Links -->
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+
+      <li class="dropdown">
+        <a href="portfolio.html">PORTFOLIO</a>
+        <ul class="dropdown-menu">
+          <li><a href="portfolio.html#writing">Writing</a></li>
+          <li><a href="portfolio.html#softskills">Soft Skills</a></li>
+          <li><a href="portfolio.html#web">Web</a></li>
+          <li><a href="portfolio.html#programming">Programming</a></li>
+          <li><a href="portfolio.html#database">Database</a></li>
+          <li><a href="portfolio.html#capstone">Capstone</a></li>
+        </ul>
+      </li>
+
+      <li><a href="assets/doc/resumerevised.pdf">RESUME</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+</header>
+
 		<main>
 			<section id="hero">
 				<h1>
@@ -95,5 +117,15 @@
 				</ul>
 			</nav>
 		</footer>
+		<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+  });
+</script>
+
 	</body>
 </html>
