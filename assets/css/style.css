@@ -9,7 +9,8 @@ html {
 }
 
 a:hover {
-	color: blue;
+	color: 
+#2596be;
 }
 
 body {
@@ -700,7 +701,7 @@ nav ul li .dropdown-menu li a:hover {
 }
 #contact {
   position: relative;
-  margin-top: 180px;
+  margin-top: 0px;
   background-image: url(../img/clouds2.jpg);
   background-size: cover;
   background-position: center;
@@ -784,7 +785,8 @@ nav ul li .dropdown-menu li a:hover {
 
 .contact-form button:hover {
   transform: translateY(-3px);
-  box-shadow:  0 4px 10px #7596c6;
+  box-shadow:  0 4px 10px 
+#2596be;
 }
 
 .about-image {
@@ -903,7 +905,138 @@ nav ul li .dropdown-menu li a:hover {
   .contact-form textarea {
     font-size: 1rem;
   }
+
+  #document{
+  background-color:#3a506b;
+  padding-top: 50px; 
+  padding-bottom: 100px;
+  min-height: 100vh;
+  width: 100%;
+  
+}}
+
+
+
+
+
+
+
+/* Section background + spacing */
+#my-resume {
+  padding: 60px 20px;
+  background-color: #2596be;
+
+}
+
+/* Name */
+#my-resume h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Contact row (phone, email, links) */
+#my-resume .contact-info {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 2px solid rgba(255,255,255,0.4);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+#my-resume .contact-info a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#my-resume .contact-info a:hover {
+  color: black;
+}
+
+/* Resume Docx / PDF buttons */
+#my-resume .format a {
+  background-color: white;
+  color: #2596be;
+  padding: 6px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#my-resume .format a:hover {
+  background-color: #ffffffcc;
+  color: black;
+}
+#my-resume {
+  padding: 60px 20px;
+  background-color: #2596be;
+  margin-top: 120px; /* ← add this */
+  margin-bottom: 0;
+}
+/* WRAPPER THAT CENTERS EVERYTHING */
+#my-resume .doc-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* TWO-COLUMN CONTAINER */
+#my-resume .resumes-sec {
+  display: flex;
+  
+  gap: 50px;
+  flex-wrap: wrap; /* stacks on mobile */
+  justify-content: center;
+  max-width: 1200px;
+}
+
+/* EACH COLUMN */
+#my-resume .sec-one,
+#my-resume .sec-two {
+  flex: 1 1 400px;
+  max-width: 550px;
+  color: white;
+}
+
+/* HEADING STYLES */
+#my-resume h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: underline;
+}
+
+#my-resume h5 {
+  color: #f0f0f0;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/* BODY TEXT */
+#my-resume p,
+#my-resume ul li {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* LISTS */
+#my-resume ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
 }
 
 
 
+
+
+
+
+
+
+  
